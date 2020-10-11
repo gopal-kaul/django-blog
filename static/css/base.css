@@ -1,7 +1,22 @@
 h5{
     font-size: 50px;
-    color: #AACCFF;
+    color: #FFFFFF;
 }
 p{
     font-size: 20px;
+    color: #ffffff;
+}
+.navbar-custom{
+    background-color: #2b3a57;
+}
+body{
+    background-color: #252627;
+}
+.card{
+    background-color: gray   ;
+}
+.custom-a
+{
+    font-size: 50px;
+    color: darkblue;
 }
