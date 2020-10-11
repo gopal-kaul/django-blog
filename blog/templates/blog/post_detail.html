@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div class='media'>
-        <div class="media-body">
-            <h5 class="media-title">{{object.title}}</h5>
-            <hr>
-            <p class="media-text">{{object.body}}</p>
-            <a href="{% url 'home' %}" class="btn btn-primary">Go Back</a>
+<div class='media'>
+    <div class="media-body">
+        <h5 class="media-title font-weight-bold">{{object.title}}</h5>
+        <div class="links">
+            <a href="{% url 'post_update' post.pk %}">+Edit Post</a>
+            <a href="{% url 'post_delete' post.pk %}">+Delete Post</a>
+        </div>
+        <hr>
+        <p class="media-text">{{object.body}}</p>
+        <a href="{% url 'home' %}" class="btn btn-primary">Go Back</a>
     </div>
-{% endblock content %}
+    {% endblock content %}

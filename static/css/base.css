@@ -37,3 +37,7 @@ label{
     font-size: 50px;
     color: darkblue;
 }
+.links{
+    display: flex;
+    justify-content: space-between;
+}
