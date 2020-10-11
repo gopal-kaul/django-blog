@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% for post in object_list %}
+
+<div class="media">
+    <div class="media-body">
+      <h5 class="mt-0">{{post.title}}</h5>
+      <hr>
+      <p>{{post.body}}</p>
+    </div>
+  </div>
+  
+{% endfor %}
+{% endblock content %}
