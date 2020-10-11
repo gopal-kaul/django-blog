@@ -24,11 +24,19 @@
             <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
           </li>
       </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'post_new' %}"><span class='newpost-a'>+New Post</span></a>
+          </li>
+        </ul>
+      </div>
+      
     </nav>
     <br>
     <div class='container'>
       {% block content %}
-    {% endblock content %}
+      {% endblock content %}
     </div>
 
     <!-- Optional JavaScript -->

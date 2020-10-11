@@ -13,7 +13,24 @@ body{
     background-color: #252627;
 }
 .card{
-    background-color: gray   ;
+    background-color: #252727  ;
+    border-radius: 0px;
+}
+.newpost-a{
+    color: whitesmoke;
+}
+.newpost-h1{
+    color: white;
+}
+.card:hover{
+    background-color: black;
+}
+hr{
+    background-color: white;
+    border-color: white;
+}
+label{
+    color: white;
 }
 .custom-a
 {
